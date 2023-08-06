@@ -1,5 +1,4 @@
-import {useEffect, useState} from 'react'
-import {navData} from '../../../meta/navData'
+import {useEffect} from 'react'
 import {BsChevronDown} from "react-icons/bs"
 import styles from './categories.module.css'
 import { useDispatch,useSelector } from 'react-redux'
