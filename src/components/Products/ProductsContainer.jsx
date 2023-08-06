@@ -3,13 +3,17 @@ import SingleProduct from './SingleProduct'
 import styles from '../../styles/Products/productsContainer.module.css'
 import { useDispatch,useSelector } from 'react-redux'
 import { fetchProducts } from '../../store'
-const ProductsContainer = () => {
+import { useParams } from 'react-router-dom'
+const ProductsContainer = ({categoryId}) => {
   const dispatch = useDispatch()
   const products = useSelector((state) => state.products.products)
-  console.log(products)
   useEffect(() => {
-    dispatch(fetchProducts())
-  },[dispatch])
+    if(categoryId){
+      dispatch(fetchProducts(categoryId))
+    } else {
+      dispatch(fetchProducts())
+    }
+  },[categoryId])
   return (
     <div className={styles.main}>
       {

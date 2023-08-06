@@ -7,7 +7,7 @@ import {BiMenu} from 'react-icons/bi'
 import Search from './Search'
 import SideBar from './SideBar'
 import { useDispatch,useSelector } from 'react-redux'
-import {open,close} from '../../../store'
+import {open,close} from '../../../store/slices/navSlice'
 const Nav = () => {
     const dispatch = useDispatch()
     const isOpen = useSelector((state) => state.navbar.isOpen)
