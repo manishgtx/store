@@ -1,0 +1,36 @@
+.main {
+    position: relative;
+    height: 430.5px;
+}
+
+.main>div {
+    cursor: pointer;
+}
+
+.main>div>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main>img {
+    width: 274.5px;
+    height: 274.5px;
+}
+
+.btn {
+    padding: 0.5rem 0.75rem;
+    border-radius: 30px;
+    border: 2px solid black;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 600;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 150ms ease-out;
+}
+
+.btn:hover {
+    background-color: #003d2a;
+    color: white;
+}

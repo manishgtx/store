@@ -1,0 +1,184 @@
+.main {
+   
+   
+}
+
+.main h5 {
+    color: #a09f9f;
+    cursor: pointer;
+}
+
+.main>div{
+    display: grid;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .main>div {
+        grid-template-columns: repeat(2,1fr);
+        gap: 4rem;
+    }
+}
+.container1 {
+    width: auto;
+    
+}
+@media screen and (min-width: 992px) {
+    .container1 {
+        min-height: 700px;
+    }
+}
+.imgContainer {
+    width: 100%;
+    min-height: 553px;
+    min-width: 553px;
+}
+
+.imgContainer img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.imgSelection {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.imgSelection img {
+    width: 100%;
+    border-radius: 10px;
+}
+@media screen and (min-width:620px) {
+    .imgSelection img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+}
+
+.info {
+
+}
+
+.infoWrapper br {
+    border: 1px solid black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.productInfo {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e8e8;
+}
+
+.productInfo h2 {
+    font-size: 2rem;
+}
+
+.productInfo p {
+    margin-top: 0.5rem;
+    text-transform: capitalize;
+}
+
+.pricing {
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e8e8;
+}
+
+.pricing h4 {
+    font-size: 1.5rem;
+}
+
+.pricing p {
+    margin-top: 0.5rem;
+}
+
+
+.toggleBtnWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.toggleBtn {
+    display: inline-flex;
+    background-color: #f5f6f6;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.toggleBtn span {
+    padding: 0.75rem 1.25rem;
+}
+
+.btnContainer {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e8e8;
+
+}
+
+.btnContainer button {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #003d2a;
+    font-weight: 700;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border: 2px solid ;
+    cursor: pointer;
+}
+
+.btnContainer button:first-child {
+    background-color: #003d2a;
+    color: white;
+}
+
+.tileWrapper {
+    margin-top: 1.5rem;
+}
+
+.tile {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1.5rem 1rem;
+    border: 1px solid #dfdfdfce;
+}
+
+.tile:first-child {
+    margin-bottom: 0;
+}
+
+
+.tile span {
+    color: #ff9657;
+}
+
+.tile div p {
+    margin-top: 0.2rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.secondTileWrapper p{
+    text-decoration: none !important;
+}
+.secondTileWrapper p span {
+    text-decoration: underline;
+    color: black;
+}

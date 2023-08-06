@@ -1,0 +1,45 @@
+.main {
+    background-color: #003d2a;
+}
+
+.main>div {
+    max-width: 1170px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: content-box;
+}
+.main>div>div:first-child{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.main>div>div:last-child {
+    display: flex;
+    gap: 1rem;
+}
+.main>div>div:last-child>div{
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.main>div>p{
+    display: none;
+}
+
+.main>div>p>span {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .main>div>p{
+        display: block;
+    }
+}

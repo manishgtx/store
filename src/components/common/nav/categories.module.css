@@ -1,0 +1,56 @@
+.categories {
+    position: relative;
+    padding: 0.3rem;
+  
+}
+.categoryWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.btn {
+    background-color: transparent;
+    border: none;
+}
+
+.items {
+    position: absolute;
+    top: 30px;
+    box-sizing: border-box;
+    background-color: #f5f6f7;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 150px;
+    border-radius: 0.5rem;
+    display: none;
+}
+
+.items li:not(:first-child) {
+    
+}
+
+.items li {
+    padding: 0.75rem;
+
+}
+.items li:hover {
+    background-color: #003d2a;
+    color: white;
+}
+
+.items li:last-child:hover {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.items li:first-child:hover {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+
+
+.categories:hover .items{
+    display: block;
+}
